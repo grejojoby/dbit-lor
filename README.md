@@ -18,6 +18,7 @@
 - [Screenshots](#screenshots)
 - [Built with](#built-with)
 - [Authors](#authors)
+- [Frontend](#frontend)
 - [Backend](#backend)
 - [Android App](#android)
 
@@ -48,9 +49,9 @@ and the final LOR can be downloaded by the student.
 
 ### Screenshots
 
-<img src="./screenshots/login.png" width="47%"  /> 
-<img src="./screenshots/studentdash.png" width="47%"  /> <img src="./screenshots/studentapply.png" width="47%"  /> 
-<img src="./screenshots/teacherdash.png" width="47%"  /> <img src="./screenshots/teacherapprove.png" width="47%"  /> 
+<img src="https://github.com/haydencordeiro/DbitLor/raw/master/screenshots/login.png" width="47%"  /> 
+<img src="https://github.com/haydencordeiro/DbitLor/raw/master/screenshots/studentdash.png" width="47%"  /> <img src="./screenshots/studentapply.png" width="47%"  /> 
+<img src="https://github.com/haydencordeiro/DbitLor/raw/master/screenshots/studentapply.png" width="47%"  /> <img src="./screenshots/teacherapprove.png" width="47%"  /> 
 
 ### Built with
 
@@ -72,12 +73,14 @@ and the final LOR can be downloaded by the student.
  [![Github](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/grejojoby)  
 
 
-## Backend
-[![Github](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/haydencordeiro/DbitLor)  
+## Frontend
+[![Github](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/grejojoby/dbit-lor)  
 
+## Backend
+[![Github](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/haydencordeiro/DbitLor)
 
 ## Android App <a id="android"></a>
-[![Github](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/haydencordeiro/ReactNativeDBITLOR)  
+[![Github](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/haydencordeiro/ReactNativeDBITLOR)   
 
 
 
