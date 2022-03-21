@@ -8,6 +8,7 @@ import axios from 'axios';
 import { Button } from 'rsuite';
 import LORForm from './views/examples/LORForm'
 import TeacherSideForm from './views/examples/TeacherSideForm.js'
+import { withAlert } from 'react-alert'
 
 export default function App() {
 

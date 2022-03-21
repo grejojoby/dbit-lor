@@ -30,13 +30,15 @@ import {
   Row,
   Col,
 } from "reactstrap";
+import { useAlert } from 'react-alert'
+
 // core components
 import UserHeader from "components/Headers/UserHeader.js";
 import axios from 'axios'
 
 
 const LORForm = (props) => {
-
+  const alert = useAlert()
   var [studentID, SetstudentID] = useState("");
   var [studentEmail, SetstudentEmail] = useState("");
   var [firstName, SetfirstName] = useState("");
@@ -44,8 +46,6 @@ const LORForm = (props) => {
   var [branch, Setbranch] = useState("");
   var [passoutYear, SetpassoutYear] = useState("");
   var [content, Setcontent] = useState("");
-
-
   var [teachers, SetTeachers] = useState([]);
   var [departments, SetDepartments] = useState([]);
   var [selectedTeacher, SetSelectedTeacher] = useState(null);
@@ -125,9 +125,12 @@ useEffect(() => {
 
 
   function SubmitFormForLor() {
-    
     if (selectedTeacher==null){
-      alert("Please select teacher");
+      alert.error("Please select teacher");
+      return;
+    }
+    if(content == ""){
+      alert.error("LOR body cannot be empty")
       return;
     }
     console.log("form submitted");
@@ -146,6 +149,7 @@ useEffect(() => {
             props.history.push('/admin');
           }
         );
+      alert.success("Sucessfully submitted LOR");
  
 
   }

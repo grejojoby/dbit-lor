@@ -32,10 +32,13 @@ import {
   Row,
   Col,
 } from "reactstrap";
+import { useAlert } from 'react-alert'
 
 import axios from 'axios';
 import  { Redirect } from 'react-router-dom'
+
 const Login = (props) => {
+  const alert = useAlert()
   const [username,Setusername]=useState("");
   const [password,Setpassword]=useState("");
   function usernameInp(e){
@@ -68,6 +71,8 @@ useEffect(() => {
           console.log(props)
             props.SetToken(response.data.token);
             // console.log("asdfa");
+          alert.success("Logging you in...");
+
             localStorage.setItem('token', response.data.token);
             console.log(response.data.token)
             
@@ -83,6 +88,7 @@ useEffect(() => {
         }  
         )
         .catch((error) => {
+          alert.error("Incorrect username or password!");
           console.error(error,"failed to login");
         });
     

@@ -33,10 +33,11 @@ import {
 // core components
 import UserHeader from "components/Headers/UserHeader.js";
 import axios from 'axios'
+import { useAlert } from 'react-alert'
 
 
 const TeacherSideForm = (props) => {
-
+  const alert = useAlert()
   var [studentID, SetstudentID] = useState("");
   var [studentEmail, SetstudentEmail] = useState("");
   var [firstName, SetfirstName] = useState("");
@@ -44,6 +45,7 @@ const TeacherSideForm = (props) => {
   var [branch, Setbranch] = useState("");
   var [passoutYear, SetpassoutYear] = useState("");
   var [content, Setcontent] = useState("");
+  var [lor_status, Setlor_status] = useState("");
  
 
   var [teachers, SetTeachers] = useState([]);
@@ -77,7 +79,7 @@ const TeacherSideForm = (props) => {
       .catch((error) => {
         console.error(error, "failed to approve");
       });
-
+      alert.success("Approved LOR")
   }
 
 
@@ -107,6 +109,7 @@ const TeacherSideForm = (props) => {
       .catch((error) => {
         // console.error(error, "failed to approve");
       });
+      alert.success("Rejected LOR")
 
   }
 
@@ -122,11 +125,11 @@ const TeacherSideForm = (props) => {
         SetstudentID(props.selectedLor.student.studentID)
         Setbranch(props.selectedLor.student.dept)
         Setcontent(props.selectedLor.content)
+        Setlor_status(props.selectedLor.status)
       }
       catch{
         
       }
-     
 
   }, [props.selectedLor])
 
@@ -250,7 +253,9 @@ useEffect(() => {
                   <Col xs="8">
                     <h3 className="mb-0">LOR for Approval</h3>
                   </Col>
+                  {lor_status == "pending" ?
                   <Col className="text-right" xs="4">
+                    
                     <Button
                       color="success"
                       href="#pablo"
@@ -269,7 +274,8 @@ useEffect(() => {
                     >
                       Reject
                     </Button>
-                  </Col>
+                  </Col> : <></>
+}
                 </Row>
               </CardHeader>
               <CardBody>

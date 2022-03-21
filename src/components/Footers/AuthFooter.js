@@ -35,7 +35,7 @@ const Login = () => {
                   // href="https://www.creative-tim.com?ref=adr-auth-footer"
                   // target="_blank"
                 >
-                  DBIT LOR | Made by Grejo Joby & Hayden Cordeiro
+                  DBIT LOR 
                 </span>
               </div>
             </Col>
