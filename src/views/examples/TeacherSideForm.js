@@ -80,6 +80,8 @@ const TeacherSideForm = (props) => {
         console.error(error, "failed to approve");
       });
       alert.success("Approved LOR")
+      props.history.push('/teacher')
+
   }
 
 
@@ -110,6 +112,8 @@ const TeacherSideForm = (props) => {
         // console.error(error, "failed to approve");
       });
       alert.success("Rejected LOR")
+    props.history.push('/teacher')
+
 
   }
 
