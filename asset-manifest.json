@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/dbit-lor/static/css/main.1680f4e4.chunk.css",
-    "main.js": "/dbit-lor/static/js/main.a83d8904.chunk.js",
-    "main.js.map": "/dbit-lor/static/js/main.a83d8904.chunk.js.map",
+    "main.js": "/dbit-lor/static/js/main.22db4889.chunk.js",
+    "main.js.map": "/dbit-lor/static/js/main.22db4889.chunk.js.map",
     "runtime-main.js": "/dbit-lor/static/js/runtime-main.216fc9fa.js",
     "runtime-main.js.map": "/dbit-lor/static/js/runtime-main.216fc9fa.js.map",
     "static/css/2.de1fa909.chunk.css": "/dbit-lor/static/css/2.de1fa909.chunk.css",
@@ -12,7 +12,7 @@
     "static/css/2.de1fa909.chunk.css.map": "/dbit-lor/static/css/2.de1fa909.chunk.css.map",
     "static/css/main.1680f4e4.chunk.css.map": "/dbit-lor/static/css/main.1680f4e4.chunk.css.map",
     "static/js/2.c729fe86.chunk.js.LICENSE.txt": "/dbit-lor/static/js/2.c729fe86.chunk.js.LICENSE.txt",
-    "static/js/main.a83d8904.chunk.js.LICENSE.txt": "/dbit-lor/static/js/main.a83d8904.chunk.js.LICENSE.txt",
+    "static/js/main.22db4889.chunk.js.LICENSE.txt": "/dbit-lor/static/js/main.22db4889.chunk.js.LICENSE.txt",
     "static/media/angular.jpg": "/dbit-lor/static/media/angular.b5045666.jpg",
     "static/media/argon-react.png": "/dbit-lor/static/media/argon-react.d9842dfb.png",
     "static/media/bootstrap.jpg": "/dbit-lor/static/media/bootstrap.bd712487.jpg",
@@ -32,6 +32,6 @@
     "static/css/2.de1fa909.chunk.css",
     "static/js/2.c729fe86.chunk.js",
     "static/css/main.1680f4e4.chunk.css",
-    "static/js/main.a83d8904.chunk.js"
+    "static/js/main.22db4889.chunk.js"
   ]
 }
